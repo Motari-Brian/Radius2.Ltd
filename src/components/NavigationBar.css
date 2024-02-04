@@ -1,0 +1,175 @@
+
+.navigation-bar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  @media (max-width: 768px) {
+    .top-part {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .message-icon,
+    .contact-hr,
+    .profile-info {
+      margin-bottom: 0;
+    }
+
+    .bottom-part .links {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+
+.top-part {
+  display: flex;
+  padding: 5px;
+  justify-content: flex-end;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #dbeae9;
+}
+
+.cyan {
+  background-color: rgb(21, 94, 117);
+}
+
+
+.message-icon,
+.profile-icon,
+.user-name,
+.down-arrow-icon,
+.contact-hr {
+  margin-right: 10px;
+}
+
+.contact-hr,
+.user-name {
+  margin-right: 10px;
+  color: #dbeae9;
+  text-decoration: none;
+}
+
+
+.bottom-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(241, 245, 249);
+}
+
+
+.company-name {
+  text-decoration: none;
+  margin-left: 80px; 
+  color: rgb(21, 94, 117); 
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+
+.links {
+  display: flex;
+  justify-content: space-around; 
+  padding: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .bottom-part {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .show-menu .links {
+    display: flex;
+  }
+}
+
+
+.links a {
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+  margin-right: 20px; 
+}
+
+.links a:hover {
+  color: rgb(21, 94, 117);
+}
+
+
+.links a.active::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.links a.active + a::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.links a.active + a:hover::before {
+  background-color: #ddd;
+}
+
+
+.links a.active {
+  color: rgb(21, 94, 117); 
+}
+
+
+.links a.active::after {
+  content: ""; 
+  display: block;
+  height: 2px; 
+  background-color: rgb(21, 94, 117); 
+  margin-top: px; 
+}
+
+
+.links a:hover {
+  color: rgb(21, 94, 117); 
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+
+.profile-icon,
+.user-name,
+.down-arrow-icon {
+  margin-right: 10px;
+}

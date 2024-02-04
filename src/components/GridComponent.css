@@ -1,0 +1,44 @@
+
+.grid-container {
+    width: 85%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .grid-item {
+    width: 18%;
+    background-color: rgb(241 245 249);
+    padding: 16px;
+    margin: 8px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 30px;
+    color: rgb(21, 94, 117);
+  }
+  
+  .description a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .description a:hover {
+    color: rgb(21, 94, 117);
+  }
+  
+ 
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .grid-item {
+      width: 100%; 
+    }
+  }
+  

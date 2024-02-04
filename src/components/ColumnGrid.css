@@ -1,0 +1,162 @@
+.my-masonry-grid {
+    display: flex;
+    width: auto;
+    justify-content: center; 
+  }
+  
+  .my-masonry-grid_column {
+    padding-left: 16px; 
+    background-clip: padding-box;
+  }
+  .time-off-details {
+    display: flex;
+    gap: 30px; 
+  }
+  
+  .request-button {
+    background-color:rgb(21, 94, 117);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; 
+    margin-left: 50px; 
+    align-items:flex-start;
+  
+  }
+  
+  .request-button:hover {
+    background-color: #007acc; 
+  }
+  
+ 
+  
+  .quick-links {
+    
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .quick-link {
+    color: rgb(21, 94, 117); 
+    text-decoration: none;
+  }
+  
+  .quick-link:hover {
+    text-decoration:solid; 
+  }
+  
+  
+  
+  
+  .column {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+  
+  .rectangle {
+    background-color: rgb(241 245 249);
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  
+  .contact-details {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .user-icon {
+    margin-right: 10px; 
+  }
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; 
+    margin-left: 60px;
+  }
+  
+  .contact-list li {
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-email {
+    text-decoration: none;
+    color: rgb(21, 94, 117); 
+  }
+  .phone-number {
+    text-decoration: none;
+    color: rgb(21, 94, 117);
+  }
+
+  
+  .documents-list {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .document-item {
+    display: flex;
+    align-items:flex-start;
+    gap: 10px;
+    color: rgb(21, 94, 117); 
+  }
+  
+  .document-icon {
+    align-items:flex-start;
+    flex-shrink: 0; 
+  }
+  .document-icon1 {
+    align-items:flex-end;
+    flex-shrink: 0; 
+  }
+  
+  .document-details {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .document-details a {
+    text-decoration: none;
+    color: rgb(21, 94, 117); 
+  }
+  
+  .document-details p {
+    font-size: 12px; 
+    margin-top: 0%;
+    color: initial; 
+  }
+  
+ 
+  .message-link {
+    color: rgb(21, 94, 117); 
+    text-decoration: none;
+  }
+  
+  .message-link:hover {
+    text-decoration: none; 
+  }
+  
+  
+  /* Media query for responsiveness */
+  @media screen and (max-width: 768px) {
+    .my-masonry-grid_column {
+      padding-left: 0;
+    }
+  }
+  
